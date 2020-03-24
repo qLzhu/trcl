@@ -22,6 +22,6 @@ deploy:                        # 部署阶段
   github-token: $Trcl_Token    # 部署时使用的 token
   keep-history: true           # 设置为 false 时，使用 `git push --force` 命令覆盖历史记录
   on:
-    branch: gh-pages           # 仅监听 gh-pages 分支的变化，才执行构建
+    branch: master             # 仅监听 master 分支的变化，才执行构建
   target-branch: gh-pages      # 用于存放静态资源的分支
   local-dir: public            # `hexo generate` 命令生成的静态资源所在路径
